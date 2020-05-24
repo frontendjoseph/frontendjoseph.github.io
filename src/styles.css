@@ -1,0 +1,120 @@
+html,
+body {
+  height: 100%;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.fullPage {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mainPic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 0 5px 0;
+}
+
+.tag {
+  color: #3f51b5;
+  opacity: 90%;
+}
+
+.content {
+  margin: 20px;
+  color: #3f51b5;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.button {
+  padding: 10px 80px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to left bottom,
+    #af0af2,
+    #a60cf0,
+    #9d0ded,
+    #940feb,
+    #8a10e8,
+    #820fe8,
+    #7a0ee7,
+    #710de7,
+    #660ae8,
+    #5a08ea,
+    #4c07eb,
+    #3907ed
+  );
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.circle {
+  position: relative;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  background-image: linear-gradient(
+    to left bottom,
+    #af0af2,
+    #a60cf0,
+    #9d0ded,
+    #940feb,
+    #8a10e8,
+    #820fe8,
+    #7a0ee7,
+    #710de7,
+    #660ae8,
+    #5a08ea,
+    #4c07eb,
+    #3907ed
+  );
+  border-radius: 50%;
+  margin: 10px 15px 35px 20px;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
+.circle:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background-image: radial-gradient(
+    circle at center center,
+    rgb(238, 238, 238),
+    rgb(209, 229, 246)
+  );
+  border-radius: 50%;
+}
+
+.ebook {
+  position: absolute;
+  left: 0px;
+  width: 110px;
+  height: 110px;
+  z-index: 1;
+}
+
+.optionDescription {
+  position: absolute;
+  top: 120px;
+  left: 5px;
+  color: #6f65a4;
+  font-size: 14px;
+  width: 100px;
+}
